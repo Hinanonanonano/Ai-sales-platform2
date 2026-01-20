@@ -54,7 +54,7 @@ if submitted:
             """
             
             response = client.chat.completions.create(
-                model="grok-4-fast-reasoning",  # SuperGrok 用戶可以用 grok-4，如果唔得試 grok-3 或 grok-beta
+                model="grok-4-fast-non-reasoning",  # SuperGrok 用戶可以用 grok-4，如果唔得試 grok-3 或 grok-beta
                 messages=[
                     {"role": "system", "content": "你係頂尖 B2B sales expert，用繁體中文回應。"},
                     {"role": "user", "content": prompt}
